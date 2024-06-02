@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Il mio portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="Icona.png.png">
+  <style>
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .card-body {
+      flex-grow: 1;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: calc(33.333% - 1rem);
+      margin: 0.5rem;
+      box-sizing: border-box;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 767.98px) {
+      .card {
+        width: calc(50% - 1rem);
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .card {
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="Me.png" height="40">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-translate="Me">Me</a>
+        </li>
+      </ul>
+      <div>
+        <button class="btn btn-secondary" onclick="translatePage('italian')">Italiano</button>
+        <button class="btn btn-secondary" onclick="translatePage('english')">English</button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="container">
+      <h2 data-translate="Michele Antonio Claps">Michele Antonio Claps</h2>
+      <p data-translate="intro">Salve, sono Michele Antonio Claps, un ragazzo di 17 anni che vive a Potenza. Attualmente sono uno studente presso l'IIS Einstein De-Lorenzo, appassionato sullo sviluppo dei siti web. Oltre a questo interesse pratico molto sport, precisamente boxe e palestra.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2 data-translate="Portfolio">Portfolio</h2>
+      <p data-translate="portfolio-intro">Nel corso di quest'anno scolastico 2023/2024, sono arrivato al compimento di splendidi risultati tra cui la creazione di questi 5 splendidi capolavori...</p>
+      <div class="container mt-3 card-container">
+        <div class="card">
+          <img src="SfondoGervonta.jpg" class="card-img-top" alt="Boxe">
+          <div class="card-body">
+            <h4 class="card-title" data-translate="boxing-site">Sito Web Sulla Boxe</h4>
+            <p class="card-text" data-translate="boxing-site-desc">Sito web creato per il mio sport, ben descritto e approfondito a 360°.</p>
+            <div class="text-center">
+              <a href="https://clapsmichele.github.io/boxe-/" class="btn btn-success" data-translate="link">Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="TorreDiHanoi.png" class="card-img-top" alt="TorreDiHanoi">
+          <div class="card-body">
+            <h4 class="card-title" data-translate="hanoi-site">Sito Web Torre di Hanoi</h4>
+            <p class="card-text" data-translate="hanoi-site-desc">Sito web interattivo che spiega e permette di risolvere la Torre di Hanoi.</p>
+            <div class="text-center">
+              <a href="https://clapsmichele.github.io/torredihanoi-/" class="btn btn-success" data-translate="link">Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="Labirinto.png" class="card-img-top" alt="Labirinto">
+          <div class="card-body">
+            <h4 class="card-title" data-translate="maze-game">Gioco Labirinto Unity</h4>
+            <p class="card-text" data-translate="maze-game-desc">Gioco realizzato con Unity in cui bisogna esplorare un labirinto e provare ad uscire.</p>
+            <div class="text-center">
+              <a href="https://www.youtube.com/watch?v=3DeBfjsitcU" class="btn btn-success" data-translate="link">Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="M4sfondo.jpg" class="card-img-top" alt="Bmw">
+          <div class="card-body">
+            <h4 class="card-title" data-translate="bmw-site">Sito Web Sulla BMW</h4>
+            <p class="card-text" data-translate="bmw-site-desc">Sito web dedicato al mio più grande desiderio e passione... Le BMW.</p>
+            <div class="text-center">
+              <a href="https://clapsmichele.github.io/bmw-/" class="btn btn-success" data-translate="link">Link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="Casinò.png" class="card-img-top" alt="Casinò">
+          <div class="card-body">
+            <h4 class="card-title" data-translate="casino-site">Sito Web sul Casinò</h4>
+            <p class="card-text" data-translate="casino-site-desc">Sito web per le scommesse online per il casinò</p>
+            <div class="text-center">
+              <a href="https://clapsmichele.github.io/casino-/" class="btn btn-success" data-translate="link">Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="CV" class="py-5">
+    <div class="container text-center">
+      <h2 class="display-4 mb-4" data-translate="Download CV">Scarica il mio Curriculum Vitae</h2>
+      <p class="lead mb-4" data-translate="cv-intro">Clicca sul pulsante qui sotto per scaricare il mio CV e scoprire di più sulle mie esperienze e competenze.</p>
+      <a href="CV_MAClaps_v0.1.pdf" download="MicheleAntonio_CLaps_CV.pdf" class="btn btn-primary btn-lg" data-translate="Download CV">Scarica CV<i class="fas fa-download ms-2"></i></a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 data-translate="Contact">Contattami</h2>
+      <ul>
+        <li>Email: <a href="mailto:clapsmichele1120@gmail.com">clapsmichele1120@gmail.com</a></li>
+        <li>Telefono: <a href="tel:+393482796908">+39 3482796908</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="text-center mt-5 py-4 bg-light">
+    <div class="container">
+      <p>&copy; 2024 Michele Antonio Claps</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    function translatePage(language) {
+      var translations = {
+        'italian': {
+          'Me': 'Io',
+          'Portfolio': 'Portfolio',
+          'Michele Antonio Claps': 'Michele Antonio Claps',
+          'intro': 'Salve, sono Michele Antonio Claps, un ragazzo di 17 anni che vive a Potenza. Attualmente sono uno studente presso l\'IIS Einstein De-Lorenzo, appassionato sullo sviluppo dei siti web. Oltre a questo interesse pratico molto sport, precisamente boxe e palestra.',
+          'portfolio-intro': 'Nel corso di quest\'anno scolastico 2023/2024, sono arrivato al compimento di splendidi risultati tra cui la creazione di questi 5 splendidi capolavori...',
+          'boxing-site': 'Sito Web Sulla Boxe',
+          'boxing-site-desc': 'Sito web creato per il mio sport, ben descritto e approfondito a 360°.',
+          'hanoi-site': 'Sito Web Torre di Hanoi',
+          'hanoi-site-desc': 'Sito web interattivo che spiega e permette di risolvere la Torre di Hanoi.',
+          'maze-game': 'Gioco Labirinto Unity',
+          'maze-game-desc': 'Gioco realizzato con Unity in cui bisogna esplorare un labirinto e provare ad uscire.',
+          'bmw-site': 'Sito Web Sulla BMW',
+          'bmw-site-desc': 'Sito web dedicato al mio più grande desiderio e passione... Le BMW.',
+          'casino-site': 'Sito Web sul Casinò',
+          'casino-site-desc': 'Sito web per le scommesse online per il casinò',
+          'Download CV': 'Scarica CV',
+          'cv-intro': 'Clicca sul pulsante qui sotto per scaricare il mio CV e scoprire di più sulle mie esperienze e competenze.',
+          'Contact': 'Contattami',
+          'phone': 'Telefono',
+          'link': 'Link'
+        },
+        'english': {
+          'Io': 'Me',
+          'Portfolio': 'Portfolio',
+          'Michele Antonio Claps': 'Michele Antonio Claps',
+          'intro': 'Hello, I am Michele Antonio Claps, a 17-year-old boy living in Potenza. I am currently a student at IIS Einstein De-Lorenzo, passionate about web development. Besides this interest, I practice a lot of sports, especially boxing and gym.',
+          'portfolio-intro': 'During this school year 2023/2024, I have achieved splendid results, including the creation of these 5 magnificent masterpieces...',
+          'boxing-site': 'Website About Boxing',
+          'boxing-site-desc': 'Website created for my sport, well described and thoroughly explored.',
+          'hanoi-site': 'Website Tower of Hanoi',
+          'hanoi-site-desc': 'Interactive website that explains and allows solving the Tower of Hanoi.',
+          'maze-game': 'Unity Maze Game',
+          'maze-game-desc': 'Game developed with Unity where you have to explore a maze and try to get out.',
+          'bmw-site': 'Website About BMW',
+          'bmw-site-desc': 'Website dedicated to my greatest desire and passion... BMWs.',
+          'casino-site': 'Website About Casino',
+          'casino-site-desc': 'Website for online betting for the casino',
+          'Download CV': 'Download CV',
+          'cv-intro': 'Click the button below to download my CV and learn more about my experiences and skills.',
+          'Contact': 'Contact Me',
+          'phone': 'Telephone',
+          'link': 'Link'
+        }
+      };
+
+      // Store selected language in local storage
+      localStorage.setItem('selectedLanguage', language);
+
+      var translation = translations[language];
+
+      $('[data-translate]').each(function () {
+        var key = $(this).data('translate');
+        if (translation[key]) {
+          $(this).text(translation[key]);
+        }
+      });
+    }
+
+    // Apply the stored language on page load
+    function applyStoredLanguage() {
+      var storedLanguage = localStorage.getItem('selectedLanguage');
+      if (storedLanguage) {
+        translatePage(storedLanguage);
+      }
+    }
+
+    // Call the function to apply the language when the page loads
+    $(document).ready(function () {
+      applyStoredLanguage();
+    });
+  </script>
+</body>
+
+</html>

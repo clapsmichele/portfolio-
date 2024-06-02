@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portfolio | Michele Antonio Claps</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="Icona.png.png">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-brand">
+      <img src="Me.png" height="40">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Informazioni.html" data-translate="Me">Me</a>
+        </li>
+      </ul>
+      <div>
+        <button class="btn btn-secondary" onclick="translatePage('italian')">Italiano</button>
+        <button class="btn btn-secondary" onclick="translatePage('english')">English</button>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    body {
+      background-color: black;
+      background-image: url('SfondoPrincipale.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    .category {
+      background-color: black;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .category p {
+      color: black;
+      text-align: justify;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-left: 75px;
+      margin-right: 50px;
+    }
+
+    .footer-content img {
+      max-width: 700px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .footer-content p {
+      margin-top: 50px;
+      color: black;
+      max-width: 380px;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+    }
+  </style>
+
+  <footer>
+    <div class="footer-content">
+      <p>
+        <i data-translate="Benvenuti nel mio portfolio!">Benvenuti nel mio portfolio!</i>
+        <i data-translate="Sono Michele Antonio Claps, uno studente dell'IIS Einstein De-Lorenzo appassionato della progettazione e creazione di siti web. Nel corso degli anni, ho lavorato duramente per perfezionare le mie abilità e creare un portfolio diversificato che rappresenta il mio impegno e la mia creatività. Il mio portfolio include una vasta gamma di progetti. Ogni progetto è stato realizzato con cura e attenzione ai dettagli, dimostrando la mia capacità di adattarmi a diverse sfide e di trasformare le idee in realtà tangibili.">
+          Sono Michele Antonio Claps, uno studente dell'IIS Einstein De-Lorenzo appassionato della progettazione e creazione di siti web. Nel corso degli anni, ho lavorato duramente per perfezionare le mie abilità e creare un portfolio diversificato che rappresenta il mio impegno e la mia creatività. Il mio portfolio include una vasta gamma di progetti. Ogni progetto è stato realizzato con cura e attenzione ai dettagli, dimostrando la mia capacità di adattarmi a diverse sfide e di trasformare le idee in realtà tangibili.
+        </i>
+      </p>
+    </div>
+    <p data-translate="2024 Michele Antonio Claps">&copy; 2024 Michele Antonio Claps</p>
+  </footer>
+
+  <script>
+    // Funzione per tradurre la pagina
+    function translatePage(language) {
+      var translations = {
+        'italian': {
+          'Me': 'Io',
+          'Benvenuti nel mio portfolio!': 'Benvenuti nel mio portfolio!',
+          'Sono Michele Antonio Claps, uno studente dell\'IIS Einstein De-Lorenzo appassionato della progettazione e creazione di siti web. Nel corso degli anni, ho lavorato duramente per perfezionare le mie abilità e creare un portfolio diversificato che rappresenta il mio impegno e la mia creatività. Il mio portfolio include una vasta gamma di progetti. Ogni progetto è stato realizzato con cura e attenzione ai dettagli, dimostrando la mia capacità di adattarmi a diverse sfide e di trasformare le idee in realtà tangibili.':
+            'Sono Michele Antonio Claps, uno studente dell\'IIS Einstein De-Lorenzo appassionato della progettazione e creazione di siti web. Nel corso degli anni, ho lavorato duramente per perfezionare le mie abilità e creare un portfolio diversificato che rappresenta il mio impegno e la mia creatività. Il mio portfolio include una vasta gamma di progetti. Ogni progetto è stato realizzato con cura e attenzione ai dettagli, dimostrando la mia capacità di adattarmi a diverse sfide e di trasformare le idee in realtà tangibili.',
+          '2024 Michele Antonio Claps': '&copy; 2024 Michele Antonio Claps'
+        },
+        'english': {
+          'Io': 'Me',
+          'Benvenuti nel mio portfolio!': 'Welcome to my portfolio!',
+          'Sono Michele Antonio Claps, uno studente dell\'IIS Einstein De-Lorenzo appassionato della progettazione e creazione di siti web. Nel corso degli anni, ho lavorato duramente per perfezionare le mie abilità e creare un portfolio diversificato che rappresenta il mio impegno e la mia creatività. Il mio portfolio include una vasta gamma di progetti. Ogni progetto è stato realizzato con cura e attenzione ai dettagli, dimostrando la mia capacità di adattarmi a diverse sfide e di trasformare le idee in realtà tangibili.':
+            'I am Michele Antonio Claps, a student at IIS Einstein De-Lorenzo passionate about designing and creating websites. Over the years, I have worked hard to refine my skills and create a diversified portfolio that represents my commitment and creativity. My portfolio includes a wide range of projects. Each project has been crafted with care and attention to detail, showcasing my ability to adapt to different challenges and turn ideas into tangible reality.',
+          '&copy; 2024 Michele Antonio Claps': '&copy; 2024 Michele Antonio Claps'
+        }
+      };
+
+      var translation = translations[language];
+
+      // Applica le traduzioni ai contenuti della pagina
+      document.querySelectorAll('[data-translate]').forEach(function (element) {
+        var key = element.getAttribute('data-translate');
+        if (translation[key]) {
+          element.textContent = translation[key];
+        }
+      });
+
+      // Salva la lingua scelta nel localStorage
+      localStorage.setItem('preferredLanguage', language);
+    }
+
+    // Applica la traduzione salvata nel localStorage al caricamento della pagina
+    document.addEventListener('DOMContentLoaded', function () {
+      var preferredLanguage = localStorage.getItem('preferredLanguage');
+      if (preferredLanguage) {
+        translatePage(preferredLanguage);
+      }
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
